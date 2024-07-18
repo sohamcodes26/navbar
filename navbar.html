@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAV bar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: azure;
+            position: relative;
+            height: 1000px;
+        }
+
+        :root {
+            --color: rgb(205, 119, 119);
+            --background-color: black;
+        }
+
+        .parent {
+            display: flex;
+            background-color: var(--background-color);
+            height: 100px;
+            width: 100%;
+            /* position: relative; */
+            position: fixed;
+            top: 0px;
+        }
+
+        img {
+            height: 100%;
+            filter: invert();
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+
+        }
+
+        ul li {
+            padding-left: ;
+            color: var(--color);
+            background-color: var(--background-color);
+            margin-top: 5%;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            position: relative;
+        }
+
+        ul li:hover {
+            color: azure;
+        }
+
+        ul :first-child {
+            margin-right: 80px;
+        }
+
+        .child {
+            margin-right: 80px;
+        }
+
+        .image2 {
+            position: absolute;
+            height: 60%;
+            padding: 20px;
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <img class="image1" src="./bird.jpg" alt="">
+        <ul>
+
+            <li>Home</li>
+            <li class="child">Alerts</li>
+            <li class="child">Settings</li>
+            <li>About us</li>
+
+        </ul>
+        <img class="image2" src="./profilelogo.png" alt="">
+    </div>
+</body>
+
+</html>
