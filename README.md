@@ -1,1 +1,3 @@
-# navbar
+navbar.html
+bird.jpg
+profilelogo.png
